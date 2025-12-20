@@ -51,3 +51,7 @@
   text-decoration: none;
   color: rgb(64, 64, 214);
 }
+
+.two-links li a:hover {
+  color: black;
+}
