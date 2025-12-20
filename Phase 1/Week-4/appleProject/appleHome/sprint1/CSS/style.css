@@ -4,6 +4,11 @@
   box-sizing: content-box;
 }
 
+body {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .header-conrainer ul li {
   display: inline;
   padding: 2% 5%;
@@ -54,4 +59,42 @@
 
 .two-links li a:hover {
   color: black;
+}
+
+.iphone11-pro-bg img {
+  width: 1270px;
+  aspect-ratio: 2;
+  position: relative;
+}
+
+.fixed-content {
+  z-index: 1000;
+  top: 800px;
+  left: 350px;
+  position: absolute;
+  color: white;
+}
+
+.iphone-11 {
+  font-size: 60px;
+  font-weight: bold;
+  padding-left: 80px;
+  margin: 10px;
+}
+
+.the-pros {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.currency {
+  color: grey;
+  margin-top: 10px;
+  font-size: large;
+  padding-left: 150px;
+}
+
+.pro-links {
+  margin-top: 10px;
+  padding-left: 200px;
 }
