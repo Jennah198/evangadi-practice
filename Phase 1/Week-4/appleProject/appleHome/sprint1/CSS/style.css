@@ -18,3 +18,36 @@
 .apple-logo a {
   background-color: aliceblue;
 }
+
+.hero-section {
+  padding-top: 2%;
+  background-color: rgb(249, 245, 245);
+  text-align: center;
+}
+
+.hero-div {
+}
+
+.inch-model {
+  padding: 1%;
+}
+
+.macbook {
+  font-size: 40px;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.brightest {
+  font-size: 50px;
+}
+
+.two-links li {
+  display: inline;
+  padding: 2%;
+}
+
+.two-links li a {
+  text-decoration: none;
+  color: rgb(64, 64, 214);
+}
