@@ -106,12 +106,10 @@ body {
 
 .second-fixed-container {
   z-index: 1000;
-  top: 1500px;
+  top: 1400px;
   left: 400px;
   position: absolute;
   color: rgb(10, 2, 2);
-  margin-top: 0%;
-  padding-top: 0%;
 }
 
 .iphone-11-2 {
