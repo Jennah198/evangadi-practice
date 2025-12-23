@@ -1,34 +1,34 @@
 * {
   box-sizing: content-box;
-  padding: 0%;
-  margin: 0%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header {
-  font-family: 'BBH Hegarty', sans-serif;
+  /* font-family: 'BBH Hegarty', sans-serif; */
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(67, 67, 210);
+  background-color: #085070;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 60px;
   height: 15px;
 }
 
 h1 {
   margin: 0px;
-  font-size: x-large;
+  font-size: 50px;
   height: 20px;
 }
 
 .banner-puppies {
-  width: 100px;
-  margin: 0%;
+  width: 10px;
   margin-bottom: 10%;
 }
 
 .banner-puppies img {
-  width: 1250px;
+  width: 1265px;
 }
 
 .container {
@@ -45,43 +45,45 @@ h1 {
 
 .missing-puppy {
   background-color: rgb(228, 112, 112);
-  font-size: xx-large;
-  font-weight: bold;
+  font-size: 50px;
   margin: 0% 20%;
   padding: 50% 80%;
-}
-.more-puppies {
-  font-family: 'BBH Hegarty', sans-serif;
-  font-weight: 400;
-  font-style: normal;
   text-align: center;
   font-weight: bold;
-  font-size: x-large;
+}
+.more-puppies {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* font-family: 'BBH Hegarty', sans-serif; */
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
   position: relative;
 }
 
+.more-puppies-pharagrapgh p {
+  text-align: center;
+}
 .two-puppies {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
   margin-bottom: 5%;
   margin-left: 10%;
 }
 
-.two-puppies .puppy-3 {
-  margin-right: 5%;
-}
-
-.two-puppies .puppy-4 {
-  margin-left: 5%;
-}
-
 .fotter {
-  background-color: rgb(67, 67, 210);
+  background-color: #085070;
   text-align: center;
   color: white;
   height: 70px;
   padding: 50px;
-  font-size: xx-large;
-  font-family: 'BBH Hegarty', sans-serif;
-  font-weight: 400;
+  /* font-family: 'BBH Hegarty', sans-serif; */
   font-style: normal;
+}
+
+.fotter p {
+  font-size: 50px;
 }
