@@ -245,3 +245,9 @@ body {
   left: 800px;
   position: relative;
 }
+
+.link-on-apple-tv {
+  position: relative;
+  top: 500px;
+  left: 250px;
+}
