@@ -202,3 +202,46 @@ body {
   margin-top: 30px;
   padding-left: 880px;
 }
+
+.tv-and-airpods-image {
+  display: flex;
+  position: absolute;
+}
+
+.tv-and-airpods-image img {
+  max-width: 50%;
+  padding: 10px;
+  aspect-ratio: 1;
+  margin-top: 250px;
+}
+
+.apple-tv-logo img {
+  position: relative;
+  top: 500px;
+  left: 50px;
+  width: 300px;
+}
+
+.tv-and-airpods-text img {
+  width: 500px;
+  left: 100px;
+  top: 580px;
+  position: relative;
+}
+
+.airpods-text {
+  position: relative;
+  top: 200px;
+  left: 800px;
+  width: 300px;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.airpods-link {
+  top: 200px;
+  left: 800px;
+  position: relative;
+}
