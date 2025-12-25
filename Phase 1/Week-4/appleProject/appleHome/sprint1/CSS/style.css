@@ -117,12 +117,13 @@ body {
 
 .iphone11-pro img {
   position: relative;
-  aspect-ratio: 2;
+  width: 100%;
+  height: 100vh;
 }
 
 .second-fixed-container {
   z-index: 1000;
-  top: 1400px;
+  top: 1300px;
   left: 400px;
   position: absolute;
   color: rgb(10, 2, 2);
