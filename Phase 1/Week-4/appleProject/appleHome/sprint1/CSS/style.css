@@ -35,12 +35,13 @@ body {
 }
 
 .apple-logo img {
-  height: 30px;
+  height: 25px;
   margin-left: 90px;
 }
 
 .search-icon img {
   height: 20px;
+  padding-right: 10px;
 }
 
 .cart-icon img {
@@ -49,35 +50,27 @@ body {
 
 .hero-section {
   padding-top: 2%;
-  background-color: rgb(249, 245, 245);
+  background-color: rgb(253, 252, 252);
   text-align: center;
 }
 
-.hero-div {
-}
-
-.inch-model {
-  padding: 1%;
-}
-
 .macbook {
-  font-size: 40px;
-  padding: 1%;
+  font-size: 60px;
   font-weight: bold;
 }
 
 .brightest {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .two-links li {
   display: inline;
-  padding: 2%;
+  padding-right: 2%;
 }
 
 .two-links li a {
   text-decoration: none;
-  color: rgb(64, 64, 214);
+  color: rgb(50, 99, 195);
 }
 
 .two-links li a:hover {
