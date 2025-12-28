@@ -200,6 +200,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
+  background-position: bottom;
 }
 
 .tv-logo img {
@@ -220,4 +221,22 @@
 .trailer ul li a {
   text-decoration: none;
   font-size: 20px;
+}
+
+.airpod-title,
+.Magic {
+  color: white;
+  text-align: center;
+}
+
+.airpod-title {
+  padding-top: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.Magic {
+  font-size: 25px;
+  padding-bottom: 20px;
 }
