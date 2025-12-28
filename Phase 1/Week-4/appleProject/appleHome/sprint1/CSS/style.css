@@ -104,3 +104,32 @@
   color: gray;
   margin-bottom: 20px;
 }
+
+/* iphone 11 section */
+.iphone-11-container {
+  background-image: url('../images/home/iphone11-bg.jpg');
+  height: 580px;
+  background-position: center;
+}
+
+.iphone-11,
+.right-amount-txt,
+.iphone-11-currencies {
+  text-align: center;
+}
+
+.iphone-11 {
+  font-size: 60px;
+  padding-top: 40px;
+}
+
+.right-amount-txt {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.iphone-11-currencies {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 20px;
+}
