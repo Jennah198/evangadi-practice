@@ -52,9 +52,14 @@
   color: rgb(38, 77, 218);
 }
 
+.more-and-buy-links ul li a:hover {
+  color: black;
+}
+
 .more-and-buy-links ul li {
   display: inline;
   padding: 20px;
+  font-size: 20px;
 }
 
 .inch {
@@ -68,4 +73,34 @@
 
 .brightest {
   font-size: 56px;
+}
+
+/* iphone 11 pro section */
+.iphone-11-pro-container {
+  background-image: url('../images/home/iphone11-pro-bg.jpg');
+  background-position: center;
+  height: 580px;
+}
+
+.iphone-11-pro,
+.pro-texts,
+.iphone-11-pro-currencies {
+  text-align: center;
+  color: white;
+}
+
+.iphone-11-pro {
+  font-size: 60px;
+  padding-top: 60px;
+}
+
+.pro-texts {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.iphone-11-pro-currencies {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 20px;
 }
