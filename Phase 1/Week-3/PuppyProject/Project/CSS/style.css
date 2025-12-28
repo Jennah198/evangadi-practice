@@ -17,14 +17,8 @@
 }
 
 h1 {
-  margin: 0px;
   font-size: 50px;
   height: 20px;
-}
-
-.banner-puppies {
-  width: 10px;
-  margin-bottom: 10%;
 }
 
 .banner-puppies img {
@@ -39,7 +33,6 @@ h1 {
 
 .three-puppies {
   display: flex;
-  justify-content: space-around;
   max-width: 33%;
 }
 
@@ -56,10 +49,7 @@ h1 {
   margin-bottom: 30px;
   /* font-family: 'BBH Hegarty', sans-serif; */
   font-weight: bold;
-  font-style: normal;
-  text-align: center;
   font-size: 40px;
-  position: relative;
 }
 
 .more-puppies-pharagrapgh p {
@@ -67,7 +57,6 @@ h1 {
 }
 .two-puppies {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 50px;
   margin-bottom: 5%;
@@ -81,7 +70,6 @@ h1 {
   height: 70px;
   padding: 50px;
   /* font-family: 'BBH Hegarty', sans-serif; */
-  font-style: normal;
 }
 
 .fotter p {
