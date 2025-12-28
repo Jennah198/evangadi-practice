@@ -133,3 +133,47 @@
   color: gray;
   margin-bottom: 20px;
 }
+
+/* watch and card section */
+.watch-and-card-section {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.watch-section {
+  background-image: url('../images/home/watch-series-5.jpg');
+  height: 580px;
+  width: 50%;
+  background-position: center;
+}
+
+.card-section {
+  background-image: url('../images/home/apple-card.jpg');
+  height: 580px;
+  width: 50%;
+  background-position: center;
+}
+
+.retinal-display-text,
+.never-seen-watch,
+.daily-cash-txt {
+  text-align: center;
+  font-size: 20px;
+}
+
+.watch-logo img,
+.card-logo img {
+  padding-left: 230px;
+  width: 65%;
+  padding-top: 50px;
+  padding-bottom: 24px;
+}
+
+.card-logo img {
+  width: 75%;
+}
+
+.never-seen-watch,
+.daily-cash-txt {
+  padding-bottom: 15px;
+}
