@@ -279,9 +279,22 @@
 .MacBook2 {
   font-size: 46px;
   font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .brightest2 {
-  font-size: 36px;
+  font-size: 25px;
   padding-bottom: 30px;
+}
+
+.ipad-img img {
+  padding-top: 40px;
+  padding-left: 250px;
+  padding-bottom: 15px;
+}
+
+.ipad-text {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 15px;
 }
