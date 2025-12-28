@@ -177,3 +177,47 @@
 .daily-cash-txt {
   padding-bottom: 15px;
 }
+
+/* tv and airpods section */
+.tv-and-airpods-section {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.tv-section {
+  background-image: url('../images/home/apple-tv-background.jpg');
+  height: 580px;
+  width: 50%;
+  background-position: center;
+}
+
+.airpods-section {
+  background-image: url('../images/home/air-pods.jpg');
+  height: 580px;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+.tv-logo img {
+  padding-top: 40px;
+  padding-left: 250px;
+}
+
+.servant-logo img {
+  padding-top: 190px;
+  padding-left: 90px;
+}
+
+.trailer ul li {
+  padding-top: 160px;
+  padding-left: 260px;
+}
+
+.trailer ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
