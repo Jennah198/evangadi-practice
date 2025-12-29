@@ -1,0 +1,9 @@
+/* add a
+media query breakpoint at 768px and include the CSS styles
+that you want to apply only when the screen size is greater
+than 768px */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
