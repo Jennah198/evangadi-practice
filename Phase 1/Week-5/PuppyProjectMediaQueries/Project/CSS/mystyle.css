@@ -7,3 +7,21 @@ than 768px */
   padding: 0%;
   box-sizing: border-box;
 }
+
+.title,
+.footer {
+  background-color: #085070;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.footer {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
