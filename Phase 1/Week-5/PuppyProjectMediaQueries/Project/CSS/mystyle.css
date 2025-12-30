@@ -11,17 +11,43 @@ than 768px */
 .title,
 .footer {
   background-color: #085070;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
 h1 {
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .footer {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* banner puppy */
+.banner-puppies img {
+  width: 485px;
+}
+
+/* two puppies */
+.puppy1 {
+  background-image: url(../images/puppy-1.jpg);
+  height: 310px;
+  width: 600px;
+  background-repeat: no-repeat;
+  margin: 6% 20%;
+}
+
+.puppy2 {
+  background-image: url(../images/puppy-2.jpg);
+  height: 310px;
+  width: 600px;
+  background-repeat: no-repeat;
+  margin: 6% 20%;
+}
+
+.more-puppies {
+  text-align: center;
+  font-size: 30px;
   padding-bottom: 40px;
-  padding-top: 40px;
 }
