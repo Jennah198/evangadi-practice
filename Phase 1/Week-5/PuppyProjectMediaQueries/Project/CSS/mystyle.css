@@ -14,8 +14,8 @@
 }
 h1 {
   color: white;
-  text-align: center;
-  font-size: 2em;
+  font-size: 30px;
+  padding: 0px 100px;
 }
 
 .footer {
@@ -72,6 +72,7 @@ h1 {
   h1 {
     font-size: 50px;
     height: 20px;
+    text-align: center;
   }
 
   .banner-puppies img {
@@ -89,6 +90,16 @@ h1 {
     max-width: 33%;
   }
 
+  .puppy-3 img,
+  .puppy-4 img {
+    height: 410px;
+    width: 450px;
+  }
+
+  .puppy-3,
+  .puppy-4 {
+    margin: 3% 5%;
+  }
   .missing-puppy {
     display: block;
     background-color: rgb(228, 112, 112);
@@ -98,6 +109,7 @@ h1 {
     text-align: center;
     font-weight: bold;
   }
+
   .more-puppies {
     margin-top: 30px;
     font-weight: bold;
@@ -111,10 +123,9 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
-    
   }
 
   .footer {
-    padding: 50px;
+    padding: 40px 0 80px;
   }
-
+}
