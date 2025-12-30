@@ -50,4 +50,22 @@ h1 {
   text-align: center;
   font-size: 30px;
   padding-bottom: 40px;
+  font-weight: bold;
+}
+
+.puppy3 {
+  background-image: url(../images/puppy-3.jpg);
+  height: 510px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 6% 20%;
+}
+
+.puppy4 {
+  background-image: url(../images/puppy-4.jpg);
+  height: 510px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 6% 20%;
 }
