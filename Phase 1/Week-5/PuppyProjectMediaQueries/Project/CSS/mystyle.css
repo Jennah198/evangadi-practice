@@ -1,7 +1,3 @@
-/* add a
-media query breakpoint at 768px and include the CSS styles
-that you want to apply only when the screen size is greater
-than 768px */
 * {
   margin: 0%;
   padding: 0%;
@@ -13,6 +9,9 @@ than 768px */
   background-color: #085070;
 }
 
+.title {
+  padding: 10px;
+}
 h1 {
   color: white;
   text-align: center;
@@ -31,11 +30,7 @@ h1 {
 
 /* two puppies */
 .puppy-1 {
-  background-image: url(../images/puppy-1.jpg);
-  height: 310px;
-  width: 600px;
-  background-repeat: no-repeat;
-  margin: 6% 20%;
+  margin: 6% 18%;
 }
 
 .missing-puppy {
@@ -43,44 +38,34 @@ h1 {
 }
 
 .puppy-2 {
-  background-image: url(../images/puppy-2.jpg);
-  height: 310px;
-  width: 600px;
-  background-repeat: no-repeat;
-  margin: 6% 20%;
+  margin: 6% 18%;
 }
 
 .more-puppies {
   text-align: center;
   font-size: 30px;
-  padding-bottom: 40px;
   font-weight: bold;
 }
 
-.puppy-3 {
-  background-image: url(../images/puppy-3.jpg);
-  height: 510px;
-  width: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 6% 20%;
-}
-
+.puppy-3,
 .puppy-4 {
-  background-image: url(../images/puppy-4.jpg);
-  height: 510px;
-  background-position: center;
-  background-repeat: no-repeat;
   margin: 6% 20%;
 }
 
+.puppy-3 img {
+  width: 300px;
+}
+
+.puppy-4 img {
+  width: 300px;
+}
 /* ************ */
 /* media query for banner and header*/
 /* *********** */
 @media screen and (min-width: 768px) {
   .title {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 70px;
     height: 15px;
   }
 
@@ -94,7 +79,7 @@ h1 {
   }
 
   .container {
-    margin: 10%;
+    margin: 5% 8%;
     max-width: 33%;
     margin-bottom: 0%;
   }
@@ -105,17 +90,16 @@ h1 {
   }
 
   .missing-puppy {
+    display: block;
     background-color: rgb(228, 112, 112);
     font-size: 50px;
     margin: 0% 20%;
-    padding: 50% 80%;
+    padding: 30% 50%;
     text-align: center;
     font-weight: bold;
   }
   .more-puppies {
     margin-top: 30px;
-    margin-bottom: 30px;
-    /* font-family: 'BBH Hegarty', sans-serif; */
     font-weight: bold;
     font-size: 40px;
   }
@@ -126,21 +110,11 @@ h1 {
   .two-puppies {
     display: flex;
     justify-content: center;
-    gap: 50px;
     margin-bottom: 5%;
-    margin-left: 10%;
+    
   }
 
-  .fotter {
-    background-color: #085070;
-    text-align: center;
-    color: white;
-    height: 70px;
+  .footer {
     padding: 50px;
-    /* font-family: 'BBH Hegarty', sans-serif; */
   }
 
-  .fotter p {
-    font-size: 50px;
-  }
-}
