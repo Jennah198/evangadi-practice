@@ -81,7 +81,7 @@ body {
   font-size: 46px;
 }
 
-/* height and center for bachground images */
+/* height and center for background images */
 .heigt-and-center {
   background-position: center;
   height: 580px;
@@ -314,6 +314,10 @@ body {
   color: gray;
 }
 
+.footer-paragraph a:hover {
+  text-decoration: underline;
+}
+
 .link-in-paragraph {
   color: black;
   text-decoration: none;
@@ -352,15 +356,10 @@ hr {
   gap: 5px;
 }
 
-.Shop-and-Learn h3,
-.Services h3,
-.apple-store h3,
-.Business h3,
-.values h3 {
+.footer-bold-titles {
   font-size: 14px;
   color: rgb(60, 58, 58);
 }
-
 .Shop-and-Learn ul li a,
 .Services ul li a,
 .apple-store ul li a,
@@ -372,15 +371,9 @@ hr {
   gap: 10px;
 }
 
-.Shop-and-Learn ul li,
-.Services ul li,
-.apple-store ul li,
-.Business ul li,
-.values ul li,
-.footer-links-terms ul li {
+.footer-list {
   list-style-type: none;
 }
-
 .Services ul,
 .Services ul,
 .apple-store ul,
@@ -389,12 +382,6 @@ hr {
   margin-bottom: 20px;
 }
 
-.Shop-and-Learn ul li a:hover,
-.Services ul li a:hover,
-.apple-store ul li a:hover,
-.Business ul li a:hover,
-.values ul li a:hover,
-.footer-links-terms ul li a:hover,
-.footer-paragraph a:hover {
+.footer-list a:hover {
   text-decoration: underline;
 }
