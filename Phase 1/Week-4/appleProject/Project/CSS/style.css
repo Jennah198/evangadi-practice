@@ -43,6 +43,7 @@ body {
   width: 900px;
   align-items: center;
   padding-left: 370px;
+  padding-top: 30px;
 }
 
 .inch,
@@ -72,19 +73,23 @@ body {
   padding-top: 10px;
 }
 .MacBook {
-  font-size: 56px;
+  font-size: 46px;
   font-weight: bold;
 }
 
 .brightest {
-  font-size: 56px;
+  font-size: 46px;
+}
+
+/* height and center for bachground images */
+.heigt-and-center {
+  background-position: center;
+  height: 580px;
 }
 
 /* iphone 11 pro section */
 .iphone-11-pro-container {
   background-image: url('../images/home/iphone11-pro-bg.jpg');
-  background-position: center;
-  height: 580px;
 }
 
 .iphone-11-pro,
@@ -97,6 +102,7 @@ body {
 .iphone-11-pro {
   font-size: 60px;
   padding-top: 60px;
+  font-weight: bold;
 }
 
 .pro-texts {
@@ -113,8 +119,6 @@ body {
 /* iphone 11 section */
 .iphone-11-container {
   background-image: url('../images/home/iphone11-bg.jpg');
-  height: 580px;
-  background-position: center;
 }
 
 .iphone-11,
@@ -126,6 +130,7 @@ body {
 .iphone-11 {
   font-size: 60px;
   padding-top: 40px;
+  font-weight: bold;
 }
 
 .right-amount-txt {
@@ -147,16 +152,12 @@ body {
 }
 .watch-section {
   background-image: url('../images/home/watch-series-5.jpg');
-  height: 580px;
   width: 50%;
-  background-position: center;
 }
 
 .card-section {
   background-image: url('../images/home/apple-card.jpg');
-  height: 580px;
   width: 50%;
-  background-position: center;
 }
 
 .retinal-display-text,
@@ -188,22 +189,23 @@ body {
   display: flex;
   padding: 10px;
   gap: 10px;
-  padding-top: 5px;
 }
 
 .tv-section {
   background-image: url('../images/home/apple-tv-background.jpg');
-  height: 580px;
   width: 50%;
-  background-position: center;
 }
 
+.trailer a::after {
+  font-family: 'FontAwesome';
+  font-weight: 200;
+  content: '\f144';
+  padding-left: 5px;
+}
 .airpods-section {
   background-image: url('../images/home/air-pods.jpg');
-  height: 580px;
   width: 50%;
   background-repeat: no-repeat;
-  background-position: center;
   background-color: black;
   background-position: bottom;
 }
@@ -257,7 +259,6 @@ body {
 .macbook-section {
   background-image: url('../images/home/mac-laptop.jpg');
   width: 50%;
-  background-position: center;
   background-repeat: no-repeat;
   background-color: rgb(248, 250, 251);
   background-position: bottom;
@@ -266,9 +267,7 @@ body {
 
 .ipad-section {
   background-image: url('../images/home/new-ipad.jpg');
-  height: 580px;
   width: 50%;
-  background-position: center;
 }
 
 .inch2,
