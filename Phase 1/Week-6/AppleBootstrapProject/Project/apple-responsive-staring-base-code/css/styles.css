@@ -188,3 +188,20 @@ img {
 .pro-texts {
   padding: 5px;
 }
+
+/* iphone 11 section */
+.iphone-11-container {
+  background-image: url('../images/home/iphone11-bg.jpg');
+}
+
+.iphone-11 {
+  padding-top: 40px;
+}
+
+.right-amount-txt {
+  padding: 10px;
+}
+
+.iphone-11-currencies {
+  margin-bottom: 20px;
+}
