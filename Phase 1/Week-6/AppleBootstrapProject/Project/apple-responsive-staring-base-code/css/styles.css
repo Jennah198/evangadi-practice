@@ -271,3 +271,15 @@ img {
   background-image: url('../images/home/new-ipad.jpg');
   width: 50%;
 }
+
+/* display watch and card vertically on mobile */
+@media screen and (min-width: 480px) {
+  .watch-section {
+    display: inline;
+    width: 100%;
+  }
+  .card-section {
+    display: inline;
+    width: 100%;
+  }
+}
