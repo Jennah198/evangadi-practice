@@ -205,3 +205,14 @@ img {
 .iphone-11-currencies {
   margin-bottom: 20px;
 }
+
+/* watch and card section */
+.watch-section {
+  background-image: url('../images/home/watch-series-5.jpg');
+  width: 50%;
+}
+
+.card-section {
+  background-image: url('../images/home/apple-card.jpg');
+  width: 50%;
+}
