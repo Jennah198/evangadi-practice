@@ -216,3 +216,43 @@ img {
   background-image: url('../images/home/apple-card.jpg');
   width: 50%;
 }
+
+/* tv and airpods section */
+.tv-section {
+  background-image: url('../images/home/apple-tv-background.jpg');
+  width: 50%;
+}
+
+.trailer a::after {
+  font-family: 'FontAwesome';
+  font-weight: 200;
+  content: '\f144';
+  padding-left: 5px;
+}
+.airpods-section {
+  background-image: url('../images/home/air-pods.jpg');
+  width: 50%;
+  /* background-repeat: no-repeat;
+  background-color: black;
+  background-position: bottom; */
+}
+
+.tv-logo img {
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.servant-logo img {
+  padding-top: 190px;
+  padding-left: 10px;
+}
+
+.trailer ul li {
+  padding-top: 160px;
+  list-style: none;
+}
+
+.trailer ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
