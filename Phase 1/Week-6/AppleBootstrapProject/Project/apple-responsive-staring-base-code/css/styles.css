@@ -232,9 +232,9 @@ img {
 .airpods-section {
   background-image: url('../images/home/air-pods.jpg');
   width: 50%;
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-color: black;
-  background-position: bottom; */
+  background-position: bottom;
 }
 
 .tv-logo img {
