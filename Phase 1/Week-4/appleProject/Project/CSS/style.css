@@ -196,12 +196,6 @@ body {
   width: 50%;
 }
 
-.trailer a::after {
-  font-family: 'FontAwesome';
-  font-weight: 200;
-  content: '\f144';
-  padding-left: 5px;
-}
 .airpods-section {
   background-image: url('../images/home/air-pods.jpg');
   width: 50%;
@@ -222,12 +216,21 @@ body {
 
 .trailer ul li {
   padding-top: 160px;
-  padding-left: 260px;
+  padding-left: 200px;
 }
 
 .trailer ul li a {
   text-decoration: none;
   font-size: 20px;
+  color: blue;
+}
+
+.trailer a::after {
+  font-family: 'FontAwesome';
+  font-weight: 200;
+  content: '\f144';
+  padding-left: 5px;
+  color: blue;
 }
 
 .airpod-title,
@@ -312,6 +315,7 @@ body {
 .footer-paragraph {
   padding: 20px 150px 0px;
   color: gray;
+  font-size: 11px;
 }
 
 .footer-paragraph a:hover {
@@ -336,21 +340,32 @@ hr {
 
 .different-links-list {
   display: flex;
-  gap: 65px;
+  gap: 80px;
 }
 
 .more-way-to-shop {
   margin-left: 150px;
   margin-top: 30px;
+  font-size: 11px;
+}
+
+.more-way-to-shop a {
+  color: blue;
 }
 
 .copyright-section {
   display: flex;
   margin-left: 150px;
   gap: 50px;
+  margin-right: 50px;
+  font-size: 11px;
 }
 
-.footer-links-terms ul,
+.footer-links-terms ul {
+  display: flex;
+  gap: 10px;
+}
+
 .footer-country {
   display: flex;
   gap: 5px;
@@ -369,6 +384,7 @@ hr {
   text-decoration: none;
   color: gray;
   gap: 10px;
+  font-size: 11px;
 }
 
 .footer-list {
@@ -385,3 +401,7 @@ hr {
 .footer-list a:hover {
   text-decoration: underline;
 }
+
+/* .the-four-lists {
+  border-right: 1px solid;
+} */
