@@ -16,21 +16,99 @@ img {
 }
 
 .title {
-  padding: 8px;
-  height: 50px;
+  padding: 2%;
+  height: 50%;
 }
 
 .footer {
-  padding: 20px;
-  height: 100px;
-  font-size: 22px;
+  padding: 5%;
+  height: 50%;
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
 
 .puppy-1,
-.puppy-2 {
-  margin: auto 100px;
+.puppy-2,
+.puppy-3,
+.puppy-4 {
+  margin: auto 2%;
+  padding-top: 2%;
 }
 
 .missing-puppy {
   display: none;
+}
+
+.more-puppies-pharagrapgh {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* ************ */
+/* media query for banner and header*/
+/* *********** */
+@media screen and (min-width: 768px) {
+  .title {
+    padding: 2%;
+    height: 50%;
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+
+  /* .container {
+    margin: 5% 8%;
+    /* max-width: 33%; */
+
+  .three-puppies {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+
+  /* .puppy-1 img,
+  .puppy-2 img {
+    height: 100%;
+    width: auto;
+  }
+
+  .puppy-3 img,
+  .puppy-4 img {
+    height: 100%;
+    width: auto;
+  } */
+
+  .puppy-3,
+  .puppy-4 {
+    margin: 3% 5%;
+  }
+  .missing-puppy {
+    display: block;
+    background-color: rgb(228, 112, 112);
+    font-size: 3em;
+    margin: 0% auto;
+    padding: 2% 2%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .more-puppies {
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .more-puppies-pharagrapgh p {
+    text-align: center;
+  }
+  .two-puppies {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 90%;
+  }
+
+  .footer {
+    padding: 4%;
+    height: 50%;
+    font-size: 2rem;
+  }
 }

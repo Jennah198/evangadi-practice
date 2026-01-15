@@ -1,4 +1,3 @@
-/* General Styling*/
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -161,66 +160,7 @@ img {
 
 .more-and-buy-links ul li {
   display: inline;
-  padding: 20px;
   font-size: 20px;
-}
-/* hero background */
-.hero-section {
-  background-color: rgb(248, 250, 251);
-}
-
-/* iphone 11 pro section */
-.iphone-11-pro-container {
-  background-image: url('../images/home/iphone11-pro-bg.jpg');
-}
-
-/* height and center for background images */
-.heigt-and-center {
-  background-position: center;
-  height: 580px;
-}
-
-/* paddings */
-.iphone-11-pro {
-  padding-top: 60px;
-}
-
-.pro-texts {
-  padding: 5px;
-}
-
-/* iphone 11 section */
-.iphone-11-container {
-  background-image: url('../images/home/iphone11-bg.jpg');
-}
-
-.iphone-11 {
-  padding-top: 40px;
-}
-
-.right-amount-txt {
-  padding: 10px;
-}
-
-.iphone-11-currencies {
-  margin-bottom: 20px;
-}
-
-/* watch and card section */
-.watch-section {
-  background-image: url('../images/home/watch-series-5.jpg');
-  width: 50%;
-}
-
-.card-section {
-  background-image: url('../images/home/apple-card.jpg');
-  width: 50%;
-}
-
-/* tv and airpods section */
-.tv-section {
-  background-image: url('../images/home/apple-tv-background.jpg');
-  width: 50%;
 }
 
 .trailer a::after {
@@ -228,13 +168,6 @@ img {
   font-weight: 200;
   content: '\f144';
   padding-left: 5px;
-}
-.airpods-section {
-  background-image: url('../images/home/air-pods.jpg');
-  width: 50%;
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: bottom;
 }
 
 .tv-logo img {
@@ -257,29 +190,135 @@ img {
   font-size: 20px;
 }
 
-/* mac and ipad section */
+.text-center {
+  padding: 10px 0;
+}
+
+/* iPhone 11 Pro section */
+.iphone-11-pro-container {
+  background-image: url('../images/home/iphone11-pro-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  padding: 40px 20px;
+}
+
+/* iPhone 11 section */
+.iphone-11-container {
+  background-image: url('../images/home/iphone11-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 580px;
+  padding: 40px 20px;
+}
+
+.watch-section {
+  background-image: url('../images/home/watch-series-5.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 580px;
+  padding: 40px 20px;
+}
+
+.card-section {
+  background-image: url('../images/home/apple-card.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 580px;
+  padding: 40px 20px;
+}
+
+.tv-section {
+  background-image: url('../images/home/apple-tv-background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 580px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .tv-section {
+    width: 50%;
+  }
+}
+
+.airpods-section {
+  background-image: url('../images/home/air-pods.jpg');
+  background-position: bottom;
+  background-color: black;
+  background-repeat: no-repeat;
+  min-height: 580px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .airpods-section {
+    width: 50%;
+  }
+}
+
+/* MacBook and iPad section */
+.text-center.d-flex {
+  display: flex !important;
+  flex-direction: column;
+}
+
 .macbook-section {
   background-image: url('../images/home/mac-laptop.jpg');
-  width: 50%;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-color: rgb(248, 250, 251);
-  background-position: bottom;
-  background-size: 500px;
+  height: 580px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .macbook-section {
+    width: 50%;
+  }
 }
 
 .ipad-section {
   background-image: url('../images/home/new-ipad.jpg');
-  width: 50%;
+  background-size: cover;
+  background-position: center;
+  min-height: 580px;
+  padding: 40px 20px;
+  width: 100%;
 }
 
-/* display watch and card vertically on mobile */
-@media screen and (min-width: 480px) {
-  .watch-section {
-    display: inline;
-    width: 100%;
+@media (min-width: 768px) {
+  .ipad-section {
+    width: 50%;
   }
-  .card-section {
-    display: inline;
-    width: 100%;
-  }
+}
+
+/* Logo and image*/
+.watch-logo img,
+.card-logo img,
+.tv-logo img,
+.servant-logo img,
+.ipad-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive text sizing */
+.fs-1 {
+  font-size: calc(1.275rem + 1.5vw) !important;
+}
+
+.fs-2 {
+  font-size: calc(1.275rem + 0.9vw) !important;
+}
+
+.fs-3 {
+  font-size: calc(1.25rem + 0.3vw) !important;
+}
+
+.fs-4 {
+  font-size: calc(1.25rem + 0.15vw) !important;
 }
