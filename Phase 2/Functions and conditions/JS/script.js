@@ -59,3 +59,62 @@ function animals(value1, value2, value3) {
 animals(2, 3, 5)
 animals(1, 2, 3)
 animals(5, 2, 8)
+
+// Question 10
+function multiplyFirstArray(myArray) {
+  console.log(myArray[0] * 3)
+}
+multiplyFirstArray([3, 4])
+
+// Are the Numbers Equal?
+function isSameNum(value1, value2) {
+  if (value1 === value2) {
+    console.log('true')
+  } else {
+    console.log('false')
+  }
+}
+isSameNum(4, 8)
+isSameNum(2, 2)
+isSameNum(2, '2')
+
+// Multiple of 100
+function divisible(value) {
+  if (value % 100 == 0) {
+    console.log('true')
+  } else {
+    console.log('false')
+  }
+}
+divisible(1)
+divisible(1000)
+divisible(100)
+
+// Is the Number Even or Odd?
+function isEvenOrOdd(value) {
+  if (value % 2 == 0) {
+    console.log('even')
+  } else {
+    console.log('odd')
+  }
+}
+isEvenOrOdd(3)
+isEvenOrOdd(146)
+isEvenOrOdd(-19)
+
+// Question 14
+function getGrade(score) {
+  if (score < 0 || score > 100) {
+    return 'Invalid score'
+  } else if (score >= 90 && score <= 100) {
+    return 'Grade A'
+  } else if (score >= 80 && score <= 89) {
+    return 'Grade B'
+  } else {
+    return 'Grade C'
+  }
+}
+
+console.log(getGrade(-5)) // "Invalid score"
+console.log(getGrade(95)) // "Grade A"
+console.log(getGrade(85)) // "Grade B"
