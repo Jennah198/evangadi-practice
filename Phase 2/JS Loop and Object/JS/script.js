@@ -327,3 +327,26 @@ function malePercentage(obj) {
 
   console.log((maleCount / obj.students.length) * 100 + '%')
 }
+
+// Question 15
+// Problem:
+// Print numbers between low and high and mark divisible by 3
+
+// Input Validation:
+// - low & high must be numbers
+// - low < high
+
+function divisorsOfThree(low, high) {
+  if (typeof low !== 'number' || typeof high !== 'number' || low >= high) {
+    console.error('Invalid inputs')
+    return
+  }
+
+  for (let i = low; i <= high; i++) {
+    if (i % 3 === 0) {
+      console.log(i + ' div3')
+    } else {
+      console.log(i)
+    }
+  }
+}
