@@ -144,3 +144,39 @@ function sumArrayNumbers(arr) {
 
   console.log(sum)
 }
+
+// Question 7
+// Problem:
+// Subtract sum of odd numbers from sum of even numbers.
+
+// Input Validation:
+// - Input must be array
+// - Elements must be numbers
+
+// Pseudocode:
+// 1. Initialize evenSum and oddSum
+// 2. Loop through array
+// 3. Check even or odd
+// 4. Subtract oddSum from evenSum
+// 5. Print result
+
+function evenMinusOdd(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  let evenSum = 0
+  let oddSum = 0
+
+  for (let num of arr) {
+    if (typeof num !== 'number') {
+      console.error('Array must contain only numbers')
+      return
+    }
+
+    num % 2 === 0 ? (evenSum += num) : (oddSum += num)
+  }
+
+  console.log(evenSum - oddSum)
+}
