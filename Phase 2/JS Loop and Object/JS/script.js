@@ -263,3 +263,14 @@ function sortArrayAscending(arr) {
 
 evangadiClass.lengthOfCourse = '5 Month'
 console.log(evangadiClass)
+
+// Question 12
+// Problem:
+// Add Bootstrap to topicsCovered
+
+// Pseudocode:
+// 1. Use push method
+// 2. Print object
+
+evangadiClass.topicsCovered.push('Bootstrap')
+console.log(evangadiClass)
