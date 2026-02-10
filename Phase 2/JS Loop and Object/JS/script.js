@@ -110,3 +110,37 @@ function printArrayLength(arr) {
 
   console.log(arr.length)
 }
+
+// Question 6
+// Problem:
+// Print the sum of all numbers in an array.
+
+// Input Validation:
+// - Input must be an array
+// - All elements must be numbers
+
+// Pseudocode:
+// 1. Validate array
+// 2. Initialize sum = 0
+// 3. Loop through array
+// 4. Add each number
+// 5. Print sum
+
+function sumArrayNumbers(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  let sum = 0
+
+  for (let num of arr) {
+    if (typeof num !== 'number') {
+      console.error('Array must contain only numbers')
+      return
+    }
+    sum += num
+  }
+
+  console.log(sum)
+}
