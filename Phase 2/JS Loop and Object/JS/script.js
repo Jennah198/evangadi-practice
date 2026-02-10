@@ -180,3 +180,27 @@ function evenMinusOdd(arr) {
 
   console.log(evenSum - oddSum)
 }
+
+// Question 8
+// Problem:
+// Print elements at even indexes only.
+
+// Input Validation:
+// - Input must be array
+
+// Pseudocode:
+// 1. Loop using index
+// 2. If index % 2 === 0, print element
+
+function printEvenIndexElements(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      console.log(arr[i])
+    }
+  }
+}
