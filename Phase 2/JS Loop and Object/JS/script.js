@@ -38,3 +38,32 @@ function printNextFiveNumbers(num) {
     console.log(num + i)
   }
 }
+
+// Question 3
+// Problem:
+// Print the sum of the next 10 numbers after a given number.
+
+// Input Validation:
+// - Input must be a number
+
+// Pseudocode:
+// 1. Validate input
+// 2. Initialize sum = 0
+// 3. Loop from num + 1 to num + 10
+// 4. Add to sum
+// 5. Print sum
+
+function sumNextTenNumbers(num) {
+  if (typeof num !== 'number') {
+    console.error('Input must be a number')
+    return
+  }
+
+  let sum = 0
+
+  for (let i = 1; i <= 10; i++) {
+    sum += num + i
+  }
+
+  console.log(sum)
+}
