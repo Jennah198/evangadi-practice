@@ -302,3 +302,28 @@ function averageAge(obj) {
 
   console.log(total / obj.students.length)
 }
+
+// Question 14
+// Problem:
+// Calculate percentage of male students
+
+// Pseudocode:
+// 1. Count males
+// 2. Divide by total
+// 3. Multiply by 100
+// 4. Print result
+
+function malePercentage(obj) {
+  if (!obj.students || !Array.isArray(obj.students)) {
+    console.error('Invalid object structure')
+    return
+  }
+
+  let maleCount = 0
+
+  for (let student of obj.students) {
+    if (student.sex === 'M') maleCount++
+  }
+
+  console.log((maleCount / obj.students.length) * 100 + '%')
+}
