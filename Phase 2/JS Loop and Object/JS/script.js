@@ -227,3 +227,28 @@ function modifySampleArray(arr) {
   arr.push(32)
   console.log(arr)
 }
+
+// Question 10
+// Problem:
+// Sort array numerically ascending.
+
+// Input Validation:
+// - Input must be array of numbers
+
+// Pseudocode:
+// 1. Validate array
+// 2. Sort using compare function
+// 3. Print array
+
+function sortArrayAscending(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  arr.sort(function (a, b) {
+    return a - b
+  })
+
+  console.log(arr)
+}
