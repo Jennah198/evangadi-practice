@@ -363,3 +363,28 @@ function fizzBuzz() {
     else console.log(i)
   }
 }
+
+// Question 19
+// Problem:
+// Print 1 if all digits are even, else print 0
+
+// Input Validation:
+// - Input must be a positive integer
+
+function isEvens(num) {
+  if (typeof num !== 'number' || num < 0 || !Number.isInteger(num)) {
+    console.error('Input must be a positive integer')
+    return
+  }
+
+  let digits = num.toString()
+
+  for (let digit of digits) {
+    if (digit % 2 !== 0) {
+      console.log(0)
+      return
+    }
+  }
+
+  console.log(1)
+}
