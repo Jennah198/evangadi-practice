@@ -204,3 +204,26 @@ function printEvenIndexElements(arr) {
     }
   }
 }
+
+// Question 9
+// Problem:
+// Remove last element, add 32, print array.
+
+// Input Validation:
+// - Input must be array
+
+// Pseudocode:
+// 1. Remove last element using pop
+// 2. Add 32 using push
+// 3. Print array
+
+function modifySampleArray(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  arr.pop()
+  arr.push(32)
+  console.log(arr)
+}
