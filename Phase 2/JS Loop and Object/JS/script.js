@@ -90,3 +90,23 @@ function printArrayElements(arr) {
     console.log(item)
   }
 }
+
+// Question 5
+// Problem:
+// Print the total number of elements in an array.
+
+// Input Validation:
+// - Input must be an array
+
+// Pseudocode:
+// 1. Check input is array
+// 2. Print array.length
+
+function printArrayLength(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  console.log(arr.length)
+}
