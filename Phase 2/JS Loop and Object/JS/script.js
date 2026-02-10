@@ -274,3 +274,31 @@ console.log(evangadiClass)
 
 evangadiClass.topicsCovered.push('Bootstrap')
 console.log(evangadiClass)
+
+// Question 13
+// Problem:
+// Calculate average age of students
+
+// Input Validation:
+// - Object must contain students array
+
+// Pseudocode:
+// 1. Loop students
+// 2. Sum ages
+// 3. Divide by total students
+// 4. Print result
+
+function averageAge(obj) {
+  if (!obj.students || !Array.isArray(obj.students)) {
+    console.error('Invalid object structure')
+    return
+  }
+
+  let total = 0
+
+  for (let student of obj.students) {
+    total += student.age
+  }
+
+  console.log(total / obj.students.length)
+}
