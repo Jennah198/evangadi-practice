@@ -67,3 +67,26 @@ function sumNextTenNumbers(num) {
 
   console.log(sum)
 }
+
+// Question 4
+// Problem:
+// Print every element in an array.
+
+// Input Validation:
+// - Input must be an array
+
+// Pseudocode:
+// 1. Check input is array
+// 2. Loop through array
+// 3. Print each element
+
+function printArrayElements(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input must be an array')
+    return
+  }
+
+  for (let item of arr) {
+    console.log(item)
+  }
+}
