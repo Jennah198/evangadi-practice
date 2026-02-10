@@ -252,3 +252,14 @@ function sortArrayAscending(arr) {
 
   console.log(arr)
 }
+
+// Question 11
+// Problem:
+// Change lengthOfCourse to "5 Month"
+
+// Pseudocode:
+// 1. Update property
+// 2. Print object
+
+evangadiClass.lengthOfCourse = '5 Month'
+console.log(evangadiClass)
