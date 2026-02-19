@@ -91,27 +91,61 @@
 // 3. If n*2 exists → NOT Meera
 // 4. Otherwise → Meera
 
-function checkMeera(arr) {
+// function checkMeera(arr) {
+//   if (!Array.isArray(arr)) {
+//     console.log('Invalid input: must be an array')
+//     return
+//   }
+
+//   for (let num of arr) {
+//     if (typeof num !== 'number') {
+//       console.log('Invalid input: array must contain only numbers')
+//       return
+//     }
+
+//     if (arr.includes(num * 2)) {
+//       console.log('I am NOT a Meera array')
+//       return
+//     }
+//   }
+
+//   console.log('I am a Meera array')
+// }
+
+// checkMeera([10, 4, 0, 5])
+// checkMeera([7, 4, 9])
+// checkMeera([1, -6, 4, -3])
+
+// Question 5 (Dual array)
+// Every number must appear exactly twice
+
+// PSEUDOCODE:
+// 1. Validate input is array
+// 2. Count frequency of each value
+// 3. If any count ≠ 2 → return 0
+// 4. Otherwise return 1
+
+function isDual(arr) {
   if (!Array.isArray(arr)) {
-    console.log('Invalid input: must be an array')
-    return
+    console.log('Invalid input')
+    return 0
   }
+
+  const freq = {}
 
   for (let num of arr) {
-    if (typeof num !== 'number') {
-      console.log('Invalid input: array must contain only numbers')
-      return
-    }
+    if (typeof num !== 'number') return 0
 
-    if (arr.includes(num * 2)) {
-      console.log('I am NOT a Meera array')
-      return
-    }
+    freq[num] = (freq[num] || 0) + 1
   }
 
-  console.log('I am a Meera array')
+  for (let key in freq) {
+    if (freq[key] !== 2) return 0
+  }
+
+  return 1
 }
 
-checkMeera([10, 4, 0, 5])
-checkMeera([7, 4, 9])
-checkMeera([1, -6, 4, -3])
+console.log(isDual([1, 2, 1, 3, 3, 2]))
+console.log(isDual([2, 5, 2, 5, 5]))
+console.log(isDual([3, 1, 1, 2, 2]))
