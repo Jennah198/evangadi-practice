@@ -149,3 +149,34 @@ function isDual(arr) {
 console.log(isDual([1, 2, 1, 3, 3, 2]))
 console.log(isDual([2, 5, 2, 5, 5]))
 console.log(isDual([3, 1, 1, 2, 2]))
+
+// Question 6
+// Convert seconds into HH:MM:SS digital clock
+
+// PSEUDOCODE:
+// 1. Validate input is positive integer
+// 2. Convert into hours, minutes, seconds
+// 3. Handle next day using modulo
+// 4. Format with leading zeros
+// 5. Return string
+
+function digitalClock(totalSeconds) {
+  if (!Number.isInteger(totalSeconds) || totalSeconds < 0) {
+    console.log('Invalid input: must be positive integer seconds')
+    return
+  }
+
+  totalSeconds = totalSeconds % 86400
+
+  const hours = Math.floor(totalSeconds / 3600)
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
+  const seconds = totalSeconds % 60
+
+  const pad = (n) => String(n).padStart(2, '0')
+
+  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
+}
+
+console.log(digitalClock(5025))
+console.log(digitalClock(61201))
+console.log(digitalClock(87000))
