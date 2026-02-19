@@ -116,26 +116,26 @@
 // // 4. Add each number
 // // 5. Print sum
 
-function sumArrayNumbers(arr) {
-  if (!Array.isArray(arr)) {
-    console.error('Input must be an array')
-    return
-  }
+// function sumArrayNumbers(arr) {
+//   if (!Array.isArray(arr)) {
+//     console.error('Input must be an array')
+//     return
+//   }
 
-  let sum = 0
+//   let sum = 0
 
-  for (let num of arr) {
-    if (typeof num !== 'number') {
-      console.error('Array must contain only numbers')
-      return
-    }
-    sum += num
-  }
+//   for (let num of arr) {
+//     if (typeof num !== 'number') {
+//       console.error('Array must contain only numbers')
+//       return
+//     }
+//     sum += num
+//   }
 
-  console.log(sum)
-}
+//   console.log(sum)
+// }
 
-sumArrayNumbers([5, 6, 99, 8, 76, 4, 68, 44])
+// sumArrayNumbers([5, 6, 99, 8, 76, 4, 68, 44])
 
 // // Question 7
 // // Problem:
