@@ -67,17 +67,51 @@
 // 3. Multiply numbers from 1 to n
 // 4. Return result
 
-function returnFactorial(n) {
-  if (!Number.isInteger(n) || n < 0) {
-    console.log('Invalid input: must be non-negative integer')
+// function returnFactorial(n) {
+//   if (!Number.isInteger(n) || n < 0) {
+//     console.log('Invalid input: must be non-negative integer')
+//     return
+//   }
+
+//   if (n === 0) return 1
+//   // Recursive case: n! = n * (n-1)!
+//   return n * returnFactorial(n - 1)
+// }
+
+// console.log(returnFactorial(5))
+// console.log(returnFactorial(6))
+// console.log(returnFactorial(0))
+
+// Question 4 (Meera array)
+// Check if array contains n and n*2
+
+// PSEUDOCODE:
+// 1. Validate input is array of numbers
+// 2. Loop through elements
+// 3. If n*2 exists → NOT Meera
+// 4. Otherwise → Meera
+
+function checkMeera(arr) {
+  if (!Array.isArray(arr)) {
+    console.log('Invalid input: must be an array')
     return
   }
 
-  if (n === 0) return 1
-  // Recursive case: n! = n * (n-1)!
-  return n * returnFactorial(n - 1)
+  for (let num of arr) {
+    if (typeof num !== 'number') {
+      console.log('Invalid input: array must contain only numbers')
+      return
+    }
+
+    if (arr.includes(num * 2)) {
+      console.log('I am NOT a Meera array')
+      return
+    }
+  }
+
+  console.log('I am a Meera array')
 }
 
-console.log(returnFactorial(5))
-console.log(returnFactorial(6))
-console.log(returnFactorial(0))
+checkMeera([10, 4, 0, 5])
+checkMeera([7, 4, 9])
+checkMeera([1, -6, 4, -3])
