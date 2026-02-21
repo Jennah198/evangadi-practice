@@ -125,30 +125,33 @@
 // 3. If any count ≠ 2 → return 0
 // 4. Otherwise return 1
 
-function isDual(arr) {
-  if (!Array.isArray(arr)) {
-    console.log('Invalid input')
-    return 0
-  }
+// function isDual(arr) {
+//   if (!Array.isArray(arr)) {
+//     console.log('Invalid input')
+//     return 0
+//   }
 
-  const freq = {}
+//   const freq = {}
 
-  for (let num of arr) {
-    if (typeof num !== 'number') return 0
+//   for (let num of arr) {
+//     if (typeof num !== 'number') return 0
 
-    freq[num] = (freq[num] || 0) + 1
-  }
+//     // (value || 0) + 1 = “Initialize or increment.”
+//     freq[num] = (freq[num] || 0) + 1
+//   }
 
-  for (let key in freq) {
-    if (freq[key] !== 2) return 0
-  }
+//   // Keys = numbers in array
+//   // Values = how many times they appear
+//   for (let key in freq) {
+//     if (freq[key] !== 2) return 0
+//   }
 
-  return 1
-}
+//   return 1
+// }
 
-console.log(isDual([1, 2, 1, 3, 3, 2]))
-console.log(isDual([2, 5, 2, 5, 5]))
-console.log(isDual([3, 1, 1, 2, 2]))
+// console.log(isDual([1, 2, 1, 3, 3, 2]))
+// console.log(isDual([2, 5, 2, 5, 5]))
+// console.log(isDual([3, 1, 1, 2, 2]))
 
 // Question 6
 // Convert seconds into HH:MM:SS digital clock
@@ -160,23 +163,38 @@ console.log(isDual([3, 1, 1, 2, 2]))
 // 4. Format with leading zeros
 // 5. Return string
 
-function digitalClock(totalSeconds) {
-  if (!Number.isInteger(totalSeconds) || totalSeconds < 0) {
-    console.log('Invalid input: must be positive integer seconds')
-    return
-  }
+// function digitalClock(totalSeconds) {
+//   if (!Number.isInteger(totalSeconds) || totalSeconds < 0) {
+//     console.log('Invalid input: must be positive integer seconds')
+//     return
+//   }
 
-  totalSeconds = totalSeconds % 86400
+//   // 24 × 3600 = 86400 seconds
+//   totalSeconds = totalSeconds % 86400
 
-  const hours = Math.floor(totalSeconds / 3600)
-  const minutes = Math.floor((totalSeconds % 3600) / 60)
-  const seconds = totalSeconds % 60
+//   const hours = Math.floor(totalSeconds / 3600)
+//   const minutes = Math.floor((totalSeconds % 3600) / 60)
+//   const seconds = totalSeconds % 60
 
-  const pad = (n) => String(n).padStart(2, '0')
+//   //   function pad(n) {
+//   //     return String(n).padStart(2, '0')
+//   //   }
 
-  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
-}
+//   const pad = (n) => String(n).padStart(2, '0')
 
-console.log(digitalClock(5025))
-console.log(digitalClock(61201))
-console.log(digitalClock(87000))
+//   return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
+// }
+
+// console.log(digitalClock(5025))
+// console.log(digitalClock(61201))
+// console.log(digitalClock(87000))
+
+// visual flow
+// Total Seconds
+//      ↓
+// Remove full days (%86400)
+//      ↓
+// Split into:
+//   Hours → /3600
+//   Minutes → remainder /60
+//   Seconds → remainder %60
