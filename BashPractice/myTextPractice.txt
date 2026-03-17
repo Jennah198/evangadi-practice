@@ -1,0 +1,24 @@
+Hello bash
+# 1. Navigate to Evangadi folder on Desktop
+cd ~/Desktop/Evangadi
+
+# 2. Create BashPractice folder
+mkdir BashPractice
+
+# 3. Create BashTest inside BashPractice
+mkdir BashPractice/BashTest
+
+# 4. Create myTextFile.txt inside BashPractice
+touch BashPractice/myTextFile.txt
+
+# 5. Add "Hello bash" to the file
+echo "Hello bash" > BashPractice/myTextFile.txt
+
+# 6. Rename the file
+mv BashPractice/myTextFile.txt BashPractice/myTextPractice.txt
+
+# 7. Change permission to 776
+chmod 776 BashPractice/myTextPractice.txt
+
+# 8. Delete BashTest folder and its contents
+rm -r BashPractice/BashTest
